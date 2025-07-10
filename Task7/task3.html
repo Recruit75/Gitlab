@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+        }
+
+        .logo-placeholder {
+            border: 2px dashed #ccc;
+            padding: 20px 40px;
+            text-align: center;
+            color: #888;
+        }
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .main-nav ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .main-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+        }
+        .main-nav ul li a.active,
+        .main-nav ul li a:hover {
+            border: 1px solid #333;
+            border-radius: 4px;
+        }
+        .address-bar {
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+            margin-bottom: 30px;
+            font-size: 0.8em;
+            color: #555;
+            text-align: right;
+        }
+        .main-content h1 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .work-card {
+            border: 1px solid #e0e0e0;
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .company-logo-placeholder {
+            border: 2px dashed #ccc;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            flex-shrink: 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .card-content h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+        }
+
+        .card-content .subtitle {
+            margin: 0 0 15px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .card-content p {
+            line-height: 1.6;
+            font-size: 0.9em;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .footer-section {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        .footer-section h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-section p {
+            line-height: 1.6;
+        }
+
+        .map-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='100' x2='100' y2='0' stroke='%23ccc' stroke-width='2'/%3E%3Cline x1='0' y1='0' x2='100' y2='100' stroke='%23ccc' stroke-width='2'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
+        }
+    </style>
+
+    <body>
+
+        <div class="page-container">
+            <header class="header">
+                <div class="logo-placeholder">Logo</div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#" class="active">Who We Work With</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="address-bar">
+                <p>Calle de la Opcion 20, 28019, Madrid. Tel: 91 756</p>
+            </div>
+
+            <main class="main-content">
+                <h1>Who We Work With</h1>
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="company-logo-placeholder">Company Logo</div>
+                        <div class="card-content">
+                            <h2>Coca Cola</h2>
+                            <p class="subtitle">Steve Jobs - CEO</p>
+                            <p>Working with Reea. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="company-logo-placeholder">Company Logo</div>
+                        <div class="card-content">
+                            <h2>Coca Cola</h2>
+                            <p class="subtitle">Steve Jobs - CEO</p>
+                            <p>Working with Reea. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="company-logo-placeholder">Company Logo</div>
+                        <div class="card-content">
+                            <h2>Coca Cola</h2>
+                            <p class="subtitle">Steve Jobs - CEO</p>
+                            <p>Working with Reea. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="company-logo-placeholder">Company Logo</div>
+                        <div class="card-content">
+                            <h2>Coca Cola</h2>
+                            <p class="subtitle">Steve Jobs - CEO</p>
+                            <p>Working with Reea. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                    </article>
+                </div>
+            </main>
+
+            <footer class="footer-grid">
+                <div class="footer-section">
+                    <h3>Site Map</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Who We Work With</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Client Testimonials</h3>
+                    <p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at."</p>
+                    <p><strong>Steve Jobs,</strong><br>CEO, Windsor Foods</p>
+                </div>
+                <div class="footer-section map-placeholder">
+                    <h3>Google Map</h3>
+                </div>
+                <div class="footer-section">
+                    <h3>Where are we?</h3>
+                    <p>Calle de la Opcion 20,<br>28019,<br>Madrid</p>
+                    <p>Tel: 91 756<br>Mobile: +90</p>
+                    <a href="#">@twitter</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
